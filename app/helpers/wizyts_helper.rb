@@ -1,0 +1,2 @@
+module WizytsHelper
+end

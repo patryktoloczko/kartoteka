@@ -1,0 +1,25 @@
+<%= form_for(@diagnoza) do |f| %>
+  <% if @diagnoza.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diagnoza.errors.count, "error") %> prohibited this diagnoza from being saved:</h2>
+
+      <ul>
+      <% @diagnoza.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :typ %><br>
+    <%= f.text_field :typ %>
+  </div>
+  <div class="field">
+    <%= f.label :opis %><br>
+    <%= f.text_field :opis %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

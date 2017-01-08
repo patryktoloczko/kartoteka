@@ -1,0 +1,33 @@
+<%= form_for(@kartotek) do |f| %>
+  <% if @kartotek.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kartotek.errors.count, "error") %> prohibited this kartotek from being saved:</h2>
+
+      <ul>
+      <% @kartotek.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pacjent_id %><br>
+    <%= f.number_field :pacjent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lekarz_id %><br>
+    <%= f.number_field :lekarz_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wizyt_id %><br>
+    <%= f.number_field :wizyt_id %>
+  </div>
+  <div class="field">
+    <%= f.label :diagnoza_id %><br>
+    <%= f.number_field :diagnoza_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module DiagnozasHelper
+end

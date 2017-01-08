@@ -1,0 +1,31 @@
+<h1>Listing kartoteks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pacjent</th>
+      <th>Lekarz</th>
+      <th>Wizyt</th>
+      <th>Diagnoza</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kartoteks.each do |kartotek| %>
+      <tr>
+        <td><%= kartotek.pacjent_id %></td>
+        <td><%= kartotek.lekarz_id %></td>
+        <td><%= kartotek.wizyt_id %></td>
+        <td><%= kartotek.diagnoza_id %></td>
+        <td><%= link_to 'Show', kartotek %></td>
+        <td><%= link_to 'Edit', edit_kartotek_path(kartotek) %></td>
+        <td><%= link_to 'Destroy', kartotek, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kartotek', new_kartotek_path %>

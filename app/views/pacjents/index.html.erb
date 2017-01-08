@@ -1,0 +1,35 @@
+<h1>Listing pacjents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+      <th>Pesel</th>
+      <th>Nrtelefonu</th>
+      <th>Email</th>
+      <th>Haslo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pacjents.each do |pacjent| %>
+      <tr>
+        <td><%= pacjent.imie %></td>
+        <td><%= pacjent.nazwisko %></td>
+        <td><%= pacjent.pesel %></td>
+        <td><%= pacjent.nrtelefonu %></td>
+        <td><%= pacjent.email %></td>
+        <td><%= pacjent.haslo %></td>
+        <td><%= link_to 'Show', pacjent %></td>
+        <td><%= link_to 'Edit', edit_pacjent_path(pacjent) %></td>
+        <td><%= link_to 'Destroy', pacjent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pacjent', new_pacjent_path %>

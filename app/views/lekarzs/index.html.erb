@@ -1,0 +1,35 @@
+<h1>Listing lekarzs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+      <th>Specjalizacja</th>
+      <th>Nrtelefonu</th>
+      <th>Email</th>
+      <th>Haslo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lekarzs.each do |lekarz| %>
+      <tr>
+        <td><%= lekarz.imie %></td>
+        <td><%= lekarz.nazwisko %></td>
+        <td><%= lekarz.specjalizacja %></td>
+        <td><%= lekarz.nrTelefonu %></td>
+        <td><%= lekarz.email %></td>
+        <td><%= lekarz.haslo %></td>
+        <td><%= link_to 'Show', lekarz %></td>
+        <td><%= link_to 'Edit', edit_lekarz_path(lekarz) %></td>
+        <td><%= link_to 'Destroy', lekarz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lekarz', new_lekarz_path %>

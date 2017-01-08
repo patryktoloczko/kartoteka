@@ -1,0 +1,27 @@
+<h1>Listing diagnozas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Opis</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diagnozas.each do |diagnoza| %>
+      <tr>
+        <td><%= diagnoza.typ %></td>
+        <td><%= diagnoza.opis %></td>
+        <td><%= link_to 'Show', diagnoza %></td>
+        <td><%= link_to 'Edit', edit_diagnoza_path(diagnoza) %></td>
+        <td><%= link_to 'Destroy', diagnoza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diagnoza', new_diagnoza_path %>

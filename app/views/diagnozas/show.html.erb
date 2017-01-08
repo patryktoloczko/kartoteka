@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Typ:</strong>
+  <%= @diagnoza.typ %>
+</p>
+
+<p>
+  <strong>Opis:</strong>
+  <%= @diagnoza.opis %>
+</p>
+
+<%= link_to 'Edit', edit_diagnoza_path(@diagnoza) %> |
+<%= link_to 'Back', diagnozas_path %>

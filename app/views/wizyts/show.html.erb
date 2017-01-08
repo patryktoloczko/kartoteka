@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @wizyt.data %>
+</p>
+
+<p>
+  <strong>Lekarz:</strong>
+  <%= @wizyt.lekarz_id %>
+</p>
+
+<p>
+  <strong>Pacjent:</strong>
+  <%= @wizyt.pacjent_id %>
+</p>
+
+<%= link_to 'Edit', edit_wizyt_path(@wizyt) %> |
+<%= link_to 'Back', wizyts_path %>

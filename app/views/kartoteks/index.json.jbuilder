@@ -1,0 +1,1 @@
+json.array! @kartoteks, partial: 'kartoteks/kartotek', as: :kartotek

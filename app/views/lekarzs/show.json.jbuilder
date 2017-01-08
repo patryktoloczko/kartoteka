@@ -1,0 +1,1 @@
+json.partial! "lekarzs/lekarz", lekarz: @lekarz
