@@ -1,0 +1,1 @@
+json.array! @diagnozas, partial: 'diagnozas/diagnoza', as: :diagnoza

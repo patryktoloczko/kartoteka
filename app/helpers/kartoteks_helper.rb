@@ -1,0 +1,2 @@
+module KartoteksHelper
+end

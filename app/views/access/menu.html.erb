@@ -1,0 +1,13 @@
+<% @page_title = "Admin Menu" %>
+<div class="menu">
+<h2>Admin Menu</h2>
+<div class="indentity">Zalogój:</div>
+<ul>
+<li><%= link_to("Lista lekarzy", :controller => 'lekarzs') %></li>
+<li><%= link_to("Lista pacjentów", :controller => 'pacjents') %></li>
+<li><%= link_to("Kartoteka", :controller => 'katroteks') %></li>
+<li><%= link_to("Wizyta", :controller => 'wizyts') %></li>
+<li><%= link_to("Dziagnoza", :controller => 'diagnozas') %></li>
+<li><%= link_to("Wylogój", :action => 'logout') %></li>
+</ul>
+</div>

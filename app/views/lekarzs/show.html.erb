@@ -1,0 +1,31 @@
+ <P><strong>Dane osobowe wybranego lekarza</strong></P>
+              	<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imie:</strong>
+  <%= @lekarz.imie %>
+</p>
+
+<p>
+  <strong>Nazwisko:</strong>
+  <%= @lekarz.nazwisko %>
+</p>
+
+<p>
+  <strong>Specjalizacja:</strong>
+  <%= @lekarz.specjalizacja %>
+</p>
+
+<p>
+  <strong>Nrtelefonu:</strong>
+  <%= @lekarz.nrTelefonu %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lekarz.email %>
+</p>
+
+
+<%= link_to 'Edycja', edit_lekarz_path(@lekarz) %> |
+<%= link_to 'Powrót', lekarzs_path %>

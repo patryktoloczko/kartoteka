@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pacjent:</strong>
+  <%= @kartotek.pacjent_id %>
+</p>
+
+<p>
+  <strong>Lekarz:</strong>
+  <%= @kartotek.lekarz_id %>
+</p>
+
+<p>
+  <strong>Wizyt:</strong>
+  <%= @kartotek.wizyt_id %>
+</p>
+
+<p>
+  <strong>Diagnoza:</strong>
+  <%= @kartotek.diagnoza_id %>
+</p>
+
+<%= link_to 'Edit', edit_kartotek_path(@kartotek) %> |
+<%= link_to 'Back', kartoteks_path %>

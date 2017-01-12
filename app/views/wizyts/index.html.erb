@@ -1,0 +1,29 @@
+<h1>Listing wizyts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Lekarz</th>
+      <th>Pacjent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wizyts.each do |wizyt| %>
+      <tr>
+        <td><%= wizyt.data %></td>
+        <td><%= wizyt.lekarz_id %></td>
+        <td><%= wizyt.pacjent_id %></td>
+        <td><%= link_to 'Show', wizyt %></td>
+        <td><%= link_to 'Edit', edit_wizyt_path(wizyt) %></td>
+        <td><%= link_to 'Destroy', wizyt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wizyt', new_wizyt_path %>

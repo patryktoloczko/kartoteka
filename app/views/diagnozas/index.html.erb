@@ -1,0 +1,27 @@
+<h1>Lista zawierająca poszczególne diagnozy</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Opis</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diagnozas.each do |diagnoza| %>
+      <tr>
+        <td><%= diagnoza.typ %></td>
+        <td><%= diagnoza.opis %></td>
+        <td><%= link_to 'Pokaż', diagnoza %></td>
+        <td><%= link_to 'Edytyj', edit_diagnoza_path(diagnoza) %></td>
+        <td><%= link_to 'Usuń', diagnoza, method: :delete, data: { confirm: 'Czy napewno chcesz usunąć?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nowa diagnoza', new_diagnoza_path %>

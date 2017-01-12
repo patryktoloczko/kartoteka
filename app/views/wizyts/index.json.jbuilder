@@ -1,0 +1,1 @@
+json.array! @wizyts, partial: 'wizyts/wizyt', as: :wizyt
