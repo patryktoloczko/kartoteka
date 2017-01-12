@@ -1,5 +1,9 @@
+<<<<<<< HEAD
  <P><strong>Dane osobowe wybranego lekarza</strong></P>
               	<p id="notice"><%= notice %></p>
+=======
+<p id="notice"><%= notice %></p>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
 
 <p>
   <strong>Imie:</strong>
@@ -26,6 +30,16 @@
   <%= @lekarz.email %>
 </p>
 
+<<<<<<< HEAD
 
 <%= link_to 'Edycja', edit_lekarz_path(@lekarz) %> |
 <%= link_to 'Powrót', lekarzs_path %>
+=======
+<p>
+  <strong>Haslo:</strong>
+  <%= @lekarz.haslo %>
+</p>
+
+<%= link_to 'Edit', edit_lekarz_path(@lekarz) %> |
+<%= link_to 'Back', lekarzs_path %>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16

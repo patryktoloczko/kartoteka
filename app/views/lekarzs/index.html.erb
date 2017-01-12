@@ -1,16 +1,31 @@
+<<<<<<< HEAD
  <P><strong>Lista Doktorów</strong></P>
   	<thead>
+=======
+<h1>Listing lekarzs</h1>
+
+<table>
+  <thead>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
     <tr>
       <th>Imie</th>
       <th>Nazwisko</th>
       <th>Specjalizacja</th>
       <th>Nrtelefonu</th>
       <th>Email</th>
+<<<<<<< HEAD
    
       <th colspan="3">  Edycja</th>
     </tr>
   </thead>
 <br>
+=======
+      <th>Haslo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   <tbody>
     <% @lekarzs.each do |lekarz| %>
       <tr>
@@ -19,15 +34,29 @@
         <td><%= lekarz.specjalizacja %></td>
         <td><%= lekarz.nrTelefonu %></td>
         <td><%= lekarz.email %></td>
+<<<<<<< HEAD
     
         <td><%= link_to 'Pokaż', lekarz %></td>
         <td><%= link_to 'Edytuj', edit_lekarz_path(lekarz) %></td>
         <td><%= link_to 'Usuń', lekarz, method: :delete, data: { confirm: 'Czy napewno chcesz usunąć?' } %></td>
+=======
+        <td><%= lekarz.haslo %></td>
+        <td><%= link_to 'Show', lekarz %></td>
+        <td><%= link_to 'Edit', edit_lekarz_path(lekarz) %></td>
+        <td><%= link_to 'Destroy', lekarz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
       </tr>
     <% end %>
   </tbody>
 </table>
+<<<<<<< HEAD
 </p>
 <br>
 <p>
 <%= link_to 'Dodaj lekarza', new_lekarz_path %>
+=======
+
+<br>
+
+<%= link_to 'New Lekarz', new_lekarz_path %>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16

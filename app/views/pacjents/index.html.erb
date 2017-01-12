@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <h1>Lista pacjentów</h1>
+=======
+<h1>Listing pacjents</h1>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
 
 <table>
   <thead>
@@ -8,7 +12,11 @@
       <th>Pesel</th>
       <th>Nrtelefonu</th>
       <th>Email</th>
+<<<<<<< HEAD
       
+=======
+      <th>Haslo</th>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,10 +29,17 @@
         <td><%= pacjent.pesel %></td>
         <td><%= pacjent.nrtelefonu %></td>
         <td><%= pacjent.email %></td>
+<<<<<<< HEAD
        
         <td><%= link_to 'Pokaż', pacjent %></td>
         <td><%= link_to 'Edytuj', edit_pacjent_path(pacjent) %></td>
         <td><%= link_to 'Usuń', pacjent, method: :delete, data: { confirm: 'Czy napewno chcesz usunąć?' } %></td>
+=======
+        <td><%= pacjent.haslo %></td>
+        <td><%= link_to 'Show', pacjent %></td>
+        <td><%= link_to 'Edit', edit_pacjent_path(pacjent) %></td>
+        <td><%= link_to 'Destroy', pacjent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +47,8 @@
 
 <br>
 
+<<<<<<< HEAD
 <%= link_to 'Nowy Pacjent', new_pacjent_path %>
+=======
+<%= link_to 'New Pacjent', new_pacjent_path %>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16

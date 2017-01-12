@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   resources :kartoteks
 
   resources :wizyts
@@ -10,10 +13,13 @@ Rails.application.routes.draw do
 
   resources :lekarzs
 
+<<<<<<< HEAD
   match 'admin', :to => 'access#menu', :via => [:get, :post]
   
   
   
+=======
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

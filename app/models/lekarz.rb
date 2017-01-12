@@ -10,8 +10,13 @@ class Lekarz < ActiveRecord::Base
   
   
   validates_format_of :email, with: /@/
+<<<<<<< HEAD
  validates_length_of :haslo, :minimum => 5, :allow_blank => true
   validates_confirmation_of :haslo
+=======
+  validates_confirmation_of :haslo
+  validates_length_of :haslo,minimum:5 
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   
   
  has_many :wizyts

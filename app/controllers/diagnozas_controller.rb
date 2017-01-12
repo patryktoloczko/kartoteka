@@ -1,6 +1,10 @@
 class DiagnozasController < ApplicationController
   before_action :set_diagnoza, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
  layout 'application'
+=======
+
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   # GET /diagnozas
   # GET /diagnozas.json
   def index

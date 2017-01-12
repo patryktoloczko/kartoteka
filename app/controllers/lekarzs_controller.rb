@@ -1,7 +1,11 @@
 class LekarzsController < ApplicationController
+<<<<<<< HEAD
   
   before_action :set_lekarz, only: [:show, :edit, :update, :destroy]
   layout 'application'
+=======
+  before_action :set_lekarz, only: [:show, :edit, :update, :destroy]
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
 
   # GET /lekarzs
   # GET /lekarzs.json

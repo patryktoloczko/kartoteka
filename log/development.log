@@ -1635,6 +1635,7 @@ Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 0.0ms)
   [1m[35mPacjent Load (0.2ms)[0m  SELECT  "pacjents".* FROM "pacjents"  WHERE "pacjents"."id" = ? LIMIT 1  [["id", 1]]
   [1m[36mWizyt Load (0.2ms)[0m  [1mSELECT "wizyts".* FROM "wizyts"  WHERE "wizyts"."pacjent_id" = ?[0m  [["pacjent_id", 1]]
   [1m[35mKartotek Load (0.2ms)[0m  SELECT "kartoteks".* FROM "kartoteks"  WHERE "kartoteks"."pacjent_id" = ?  [["pacjent_id", 1]]
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2017-01-10 13:40:01 -0500
@@ -27588,3 +27589,5 @@ ActionController::RoutingError (No route matches [GET] "/js/scrolling-nav.js"):
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
   Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
+=======
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16

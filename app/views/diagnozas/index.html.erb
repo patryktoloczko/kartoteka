@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <h1>Lista zawierająca poszczególne diagnozy</h1>
+=======
+<h1>Listing diagnozas</h1>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
 
 <table>
   <thead>
@@ -14,9 +18,15 @@
       <tr>
         <td><%= diagnoza.typ %></td>
         <td><%= diagnoza.opis %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Pokaż', diagnoza %></td>
         <td><%= link_to 'Edytyj', edit_diagnoza_path(diagnoza) %></td>
         <td><%= link_to 'Usuń', diagnoza, method: :delete, data: { confirm: 'Czy napewno chcesz usunąć?' } %></td>
+=======
+        <td><%= link_to 'Show', diagnoza %></td>
+        <td><%= link_to 'Edit', edit_diagnoza_path(diagnoza) %></td>
+        <td><%= link_to 'Destroy', diagnoza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +34,8 @@
 
 <br>
 
+<<<<<<< HEAD
 <%= link_to 'Nowa diagnoza', new_diagnoza_path %>
+=======
+<%= link_to 'New Diagnoza', new_diagnoza_path %>
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16

@@ -1,6 +1,10 @@
 class KartoteksController < ApplicationController
   before_action :set_kartotek, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
  layout 'application'
+=======
+
+>>>>>>> ad3e4b4ecae3cf5b94d6a8b785f9aca4703b5a16
   # GET /kartoteks
   # GET /kartoteks.json
   def index
